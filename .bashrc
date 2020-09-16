@@ -12,7 +12,10 @@ PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # c: nice tab separated visualization
 alias c="column -s$'\t' -t -n"
 
-# c folloed by less without breaklines
+# c followed by less without breaklines and with line numbers
 cless() {
-    c "$1" | less -SN
+    c | less -SN
 }
+
+# shows only my current processes
+alias topme="top -u $(id -u -n)"
