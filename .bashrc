@@ -23,3 +23,4 @@ cless() {
 
 # shows only my current processes
 alias topme="top -u $(id -u -n)"
+alias htopme="htop -u $(id -u -n)"
