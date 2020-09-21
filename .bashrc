@@ -1,7 +1,12 @@
+
+## commands usually on .bashrc by default, just change values
+####################################
+# size of history files
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 # save each command right after it has been executed
-# export HISTSIZE=10000
-# export HISTFILESIZE=10000
 PROMPT_COMMAND='history -a'
+####################################
 
 # custom PS1 for git
 parse_git_branch() {
